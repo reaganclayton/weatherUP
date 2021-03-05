@@ -11,13 +11,19 @@ const app = express();
 if(process.env.NODE_ENV === 'development') {
     app.use(morgan('dev'));
 }
-
+// Eliminates cors error
 app.use(cors());
 // Parse as json
 app.use(express.json());
 
 // Result routes
 app.use('/result', require('./routes/result'));
+
+// Handle production
+if(process.env.NODE_ENV === 'production') {
+    // Set static folder
+    app.use(express.static(__dirname + '/public/'));
+}
 
 const port = process.env.PORT || 8000;
 
