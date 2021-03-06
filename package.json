@@ -1,7 +1,7 @@
 {
   "name": "weatherup",
   "version": "1.0.0",
-  "description": "A weather application that utilizes Vue on the frontend, which connects to an API on the backend using Node/Express",
+  "description": "A weather application that utilizes Vue on the frontend, which connects to an API on the backend using Node/Express.",
   "main": "server.js",
   "engines": {
     "node": "15.6.0",
