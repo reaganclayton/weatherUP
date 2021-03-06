@@ -1,0 +1,28 @@
+{
+  "name": "weatherup",
+  "version": "1.0.0",
+  "description": "A weather application that utilizes Vue on the frontend, which connects to an API on the backend using Node/Express",
+  "main": "server.js",
+  "engines": {
+    "node": "15.6.0"
+  },
+  "scripts": {
+    "start": "node server",
+    "server": "nodemon server",
+    "client": "cd client && npm run serve",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "author": "Reagan Clayton",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "node-fetch": "^2.6.1"
+  },
+  "devDependencies": {
+    "concurrently": "^6.0.0",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.7"
+  }
+}
