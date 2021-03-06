@@ -4,7 +4,8 @@
   "description": "A weather application that utilizes Vue on the frontend, which connects to an API on the backend using Node/Express",
   "main": "server.js",
   "engines": {
-    "node": "15.6.0"
+    "node": "15.6.0",
+    "npm": "7.5.4"
   },
   "scripts": {
     "start": "node server",
