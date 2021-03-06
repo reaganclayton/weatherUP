@@ -5,7 +5,7 @@ module.exports = {
   devServer: {
     proxy: {
       '/result': {
-        target: 'https://fast-shore-66611.herokuapp.com/',
+        target: 'http://localhost:5000',
         changeOrigin: true
       },
     }
